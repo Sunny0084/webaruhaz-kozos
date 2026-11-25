@@ -1,26 +1,38 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "h h h"
-    "n ar as"
-    "f f f";
+    "h"
+    "n"
+    "ar"
+    "f";
+    background-color: rgb(139, 200, 226);
 }
 
 header {
     grid-area: h;
 }
 
-nav {
+nav ul{
     grid-area: n;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 article {
     grid-area: ar;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
 }
 
-aside {
-    grid-area: as;
+article img {
+    width: 100%;
 }
 
 footer {
